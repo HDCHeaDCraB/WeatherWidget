@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/lib/bootstrap-4.5.2-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+    <div class="col-4"></div>
+    <div class=" form-group col-4">
+        <form class="form-horizontal">
+            <fieldset>
+            <legend>Rendelés leadása</legend>
+            <div>
+            <label for="extra">Extrák</label>
+            <input class="form-control" name="extra-input" type="text">
+            </div>
+            <div>
+                <label for="quantity">Mennyiség</label>
+                <input class="form-control" name="quantity-input" type="number" min="1" max="10">
+            </div>
+            <div>
+                Fizetendő: <span class="show-quantity">0</span> Ft
+            </div>
+            <div>
+<button type="button" onclick="calcQuantity()" class="btn btn-primary">
+    Rendelés
+</button>
+</div>
+</fieldset>
+        </form>
+    </div>
+    <div class="col-4"></div>
+</div>
+    </div>
+    <script src="/calc.js"></script>
+</body>
+</html>
